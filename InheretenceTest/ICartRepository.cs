@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace InheretenceTest
 {
-    public interface IUnitOfWork
+    public interface ICartRepository : IGenericRepository
     {
-        IGameRepository Games { get; set; }
-        ICartRepository Carts { get; set; }
+        void MethodE();
     }
 }

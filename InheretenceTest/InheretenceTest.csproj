@@ -42,8 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartRepository.cs" />
     <Compile Include="GameRepository.cs" />
     <Compile Include="GenericRepository.cs" />
+    <Compile Include="ICartRepository.cs" />
     <Compile Include="IGameRepository.cs" />
     <Compile Include="IGenericRepository.cs" />
     <Compile Include="IUnitOfWork.cs" />

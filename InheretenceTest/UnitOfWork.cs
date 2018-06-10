@@ -11,8 +11,10 @@ namespace InheretenceTest
         public UnitOfWork()
         {
             Games = new GameRepository();
+            Carts = new CartRepository();
         }
 
         public IGameRepository Games { get; set; }
+        public ICartRepository Carts { get; set; }
     }
 }

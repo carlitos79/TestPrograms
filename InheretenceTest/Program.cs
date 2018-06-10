@@ -14,10 +14,19 @@ namespace InheretenceTest
 
             while (Console.ReadKey().Key != ConsoleKey.Escape)
             {
-                uow.Games.MethodA();
-                uow.Games.MethodB();
-                uow.Games.MethodC();
-                uow.Games.MethodD();
+                Print(uow);
+            }
+        }
+
+        public static void Print(params UnitOfWork[] objs)
+        {
+            foreach (var obj in objs)
+            {
+                obj.Games.MethodA();
+                obj.Games.MethodB();
+                obj.Games.MethodC();
+                obj.Games.MethodD();
+                obj.Carts.MethodE();
             }
         }
     }
